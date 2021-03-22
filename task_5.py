@@ -1,15 +1,15 @@
 import numpy as np
 
 Image = np.array([
-[1, 2, 3, 4, 5],
-[1, 2, 3, 4, 5],
-[1, 2, 3, 4, 5],
-[1, 2, 3, 4, 5],
-[1, 2, 3, 4, 5]
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 5]
 ])
-Image = np.random.randint(256, size=(5,5))
+Image = np.random.randint(3, size=(5, 5))
 
-hist,bins = np.histogram(Image.ravel(),256,[0,256])
+hist, bins = np.histogram(Image.ravel(), 256, [0, 256])
 
 res = {}
 
@@ -21,5 +21,4 @@ print(Image)
 print()
 print("histogram =")
 print(res)
-print("else 0")
-
+print(f"else from {Image.min()} to {Image.max()} is 0")
