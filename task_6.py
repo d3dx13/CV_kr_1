@@ -8,7 +8,7 @@ Image = np.array([
     [1, 2, 3, 4, 5],
     [1, 2, 3, 4, 5]
 ])
-Image = np.random.randint(2, size=(5, 6))
+Image = np.random.randint(2, size=(5, 5))
 
 structure4 = np.ones((3, 3), dtype=np.int)
 structure4[0, 0] = 0
